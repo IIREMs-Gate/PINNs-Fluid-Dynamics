@@ -11,7 +11,7 @@ Run `python pinn.py` to start training.
 
 ## Model Architecture (PyTorch Implementation)
 The model is implemented as a deep Feed-Forward Neural Network (MLP) using the torch.nn module.
-* **Why this architecture?** MLPs are effective for PINNs because they provide a continuous, differentiable mapping from spatio-temporal coordinates $(x, z, t)$ to fluid variables $(u, w, p)$. This is essential for calculating exact derivatives via automatic differentiation.
+MLPs are effective for PINNs because they provide a continuous, differentiable mapping from spatio-temporal coordinates $(x, z, t)$ to fluid variables $(u, w, p)$. This is essential for calculating exact derivatives via automatic differentiation.
 
 ### 1. Network Topology
 Input Layer: 3 neurons representing $(x, z, t)$ coordinates.
